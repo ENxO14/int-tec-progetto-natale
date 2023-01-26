@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TransizioneComponent } from './transizione.component';
+import { UpdateExamComponent } from './update-exam.component';
 
-describe('TransizioneComponent', () => {
-  let component: TransizioneComponent;
-  let fixture: ComponentFixture<TransizioneComponent>;
+describe('UpdateExamComponent', () => {
+  let component: UpdateExamComponent;
+  let fixture: ComponentFixture<UpdateExamComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TransizioneComponent ]
+      declarations: [ UpdateExamComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TransizioneComponent);
+    fixture = TestBed.createComponent(UpdateExamComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

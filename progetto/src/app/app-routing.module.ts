@@ -1,16 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CreateExamComponent } from './create-exam/create-exam.component';
+
+import { ExamListComponent } from './exam-list/exam-list.component';
 import { LoginComponent } from './login/login.component';
-import { DownloadComponent } from './download/download.component';
-import { UploadComponent } from './upload/upload.component';
-import { TransizioneComponent } from './transizione/transizione.component';
+import { RegisterComponent } from './register/register.component';
+import { UpdateExamComponent } from './update-exam/update-exam.component';
 
 const routes: Routes = [ 
   { path: 'login', component: LoginComponent },
-  { path: 'download', component: DownloadComponent },
-  { path: 'upload', component: UploadComponent },
-  { path: 'transizione', component: TransizioneComponent },
-  { path: '',   redirectTo: '', pathMatch: 'full' }
+  { path: 'register', component: RegisterComponent },
+  { path: 'verifica', component: ExamListComponent },
+  { path: 'addVerifica', component: CreateExamComponent },
+  { path: 'updateVerifica/:id', component: UpdateExamComponent },
+  { path: '', redirectTo: '/login', pathMatch: 'full' }
 ];
 
 @NgModule({

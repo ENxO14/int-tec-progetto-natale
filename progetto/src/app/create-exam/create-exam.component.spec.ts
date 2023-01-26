@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DownloadComponent } from './download.component';
+import { CreateExamComponent } from './create-exam.component';
 
-describe('DownloadComponent', () => {
-  let component: DownloadComponent;
-  let fixture: ComponentFixture<DownloadComponent>;
+describe('CreateExamComponent', () => {
+  let component: CreateExamComponent;
+  let fixture: ComponentFixture<CreateExamComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DownloadComponent ]
+      declarations: [ CreateExamComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DownloadComponent);
+    fixture = TestBed.createComponent(CreateExamComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
